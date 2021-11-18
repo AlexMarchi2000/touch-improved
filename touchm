@@ -7,7 +7,7 @@ elif [ $# -eq 2 ]
 then
 	if [ $2 -eq 1 ]
 	then
-	echo '#Autori: Marchi Alex, Ravasi Ivan, Rizzo Matteo' >> $1
+	echo '#Autori: Marchi Alex, Group Member(1), Group Member(2)' >> $1 #Add your Group Member names
 	fi
 else
 	echo 'Numero di parametri Errato'
