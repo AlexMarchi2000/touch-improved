@@ -1,0 +1,17 @@
+#!/bin/bash
+echo '#!/bin/bash' > $1
+if [ $# -eq 1 ]
+then
+	echo '#Autori: Marchi Alex' >> $1
+elif [ $# -eq 2 ]
+then
+	if [ $2 -eq 1 ]
+	then
+	echo '#Autori: Marchi Alex, Ravasi Ivan, Rizzo Matteo' >> $1
+	fi
+else
+	echo 'Numero di parametri Errato'
+	exit 1
+fi
+chmod +x $1
+exit 0
